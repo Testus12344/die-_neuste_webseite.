@@ -3,25 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Willkommen</title>
+    <title>IP im Fenster anzeigen</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            padding: 50px;
             background-color: #f0f0f0;
+            padding: 30px;
+        }
+        iframe {
+            width: 90%;
+            height: 600px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            margin-top: 20px;
         }
         h1 {
             color: #333;
         }
         a {
+            display: inline-block;
+            margin-top: 15px;
             text-decoration: none;
             color: #1a0dab;
-            font-size: 18px;
             border: 2px solid #1a0dab;
             padding: 10px 20px;
             border-radius: 5px;
-            transition: background-color 0.3s;
         }
         a:hover {
             background-color: #e8e8e8;
@@ -30,7 +37,10 @@
 </head>
 <body>
     <h1>Willkommen auf meiner Webseite!</h1>
-    <p>Um die Seite unter der IP-Adresse zu besuchen, klicken Sie hier:</p>
-    <a href="https://146.75.117.36:80">Zur IP-Adresse</a>
+    <p>Hier wird die Seite unter der IP-Adresse angezeigt:</p>
+
+    <iframe src="https://146.75.117.36"></iframe>
+
+    <p><a href="https://146.75.117.36">Direkt öffnen (falls das Fenster leer bleibt)</a></p>
 </body>
 </html>
