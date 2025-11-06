@@ -1,30 +1,40 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Spiele eingebettet von Playgama</title>
-  <script async src="https://widgets.playgama.com/index.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meine Spiele-Webseite</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            color: #333;
+        }
+        iframe {
+            margin: 20px 0;
+            border: 2px solid #1a0dab;
+            border-radius: 8px;
+        }
+    </style>
 </head>
 <body>
-  <h1>Spielebereich</h1>
+    <h1>Willkommen auf meiner Spiele-Webseite!</h1>
+    <p>Hier kannst du direkt Spiele spielen:</p>
 
-  <!-- Hier kommt das Widget rein -->
-  <div id="widget-playgama" style="width: 510px; height: 180px; margin: 10px auto; padding: 0 20px;">
-    <div style="opacity: 0.2; font-family: sans-serif; font-size: 10px;">
-      Powered by <a href="https://playgama.com/" target="_blank" rel="noopener">Playgama</a>
-    </div>
-  </div>
+    <!-- Spiel 1 -->
+    <iframe 
+        src="https://playgama.com/export/game/locked-in-grandmas-basement-2?clid=p_871e0faf-84d0-4f04-9763-588bd2ced4a4" 
+        allow="fullscreen; accelerometer; camera; clipboard-read; clipboard-write; screen-wake-lock; speaker-selection; web-share; geolocation; gyroscope; microphone; xr-spatial-tracking; autoplay; encrypted-media; picture-in-picture; payment; publickey-credentials-get; publickey-credentials-create; storage-access; attribution-reporting; browsing-topics" 
+        frameborder="0" 
+        width="800" 
+        height="450">
+    </iframe>
 
-  <script nonce="widget-playgama">
-    window.playgama_widgets = window.playgama_widgets || { clbs: [] };
-    window.playgama_widgets.clbs.push(() => {
-      window.playgama_widgets.defineWidget({
-        widget_id: "DEINE_WIDGET_ID_HIER",  // ← Hier musst du deine Widget ID einfügen
-        element_id: "widget-playgama"
-      });
-      window.playgama_widgets.showWidget("widget-playgama");
-    });
-  </script>
+    <!-- Du kannst hier weitere Spiele einfügen, z.B. Spiel 2 und Spiel 3 -->
+    
 </body>
 </html>
